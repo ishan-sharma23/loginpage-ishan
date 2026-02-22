@@ -16,8 +16,8 @@ services:
     build: .
     container_name: loginpage-app
     restart: unless-stopped
-    # ports:
-    #   - "3000:3000"
+    ports:
+      - "3000:3000"
     depends_on:
       - mongo
     environment:
